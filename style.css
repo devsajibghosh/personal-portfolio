@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins,sans-serif;
+}
+body{
+  color: white;
+  /* background-color: #081b29; */
+}
+
+/* Header Design for web  */
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* logo design====Sajib. */
+
+.logo{
+  position: relative;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.logo::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020f1a;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+}
+
+
+
+
+
+/* navbar design */
+
+.navbar a{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  margin-left: 35px;
+}
+.navbar a:hover,
+.navbar .active
+{
+color: aqua;
+}
+.home{
+  background-image: url(ghosh.gif);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  color: white;
+  cursor: grab;
+}
+.home_contenet{
+  max-width: 600px;
+}
+.home_contenet h1{
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* home contene amimatiion  */
+
+.home_contenet h1::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020f1a;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+}
+
+.home_contenet h3{
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: aqua;
+}
+/* Animation for h3 */
+.home_contenet h3::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020f1a;
+  animation: showRight 1s ease forwards;
+  animation-delay: .6s;
+}
+
+/* Home Conten P */
+.home_contenet p{
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+/* Animation of p */
+
+.home_contenet p::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020f1a;
+  animation: showRight 1s ease forwards;
+  animation-delay: .8s;
+}
+
+.home_contenet .btn_box{
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn_box a{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
+  background-color: aqua;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px ;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Nth child use */
+
+.btn_box a:nth-child(2){
+  background-color: transparent;
+  color: aqua;
+}
+
+/* before and after use */
+
+.btn_box a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #efe4e4;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn_box a:hover::before {
+  width: 100%;
+}
+.icons{
+  background-color: transparent;
+  position: absolute;
+  bottom: 40px;
+  height: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.icons a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid aqua;
+  border-radius: 50%;
+  margin: 20px;
+  z-index: 3;
+  overflow: hidden;
+}
+.icons a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(252, 252, 252);
+  transition: 0.5s;
+  z-index: -1;
+}
+.icons a:hover::before{
+  width: 100%;
+}
+
+.hover_img{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+
+  transition: 0.4s;
+}
+.hover_img:hover{
+  background-color: #020f1a;
+  opacity: 0.7;
+}
+@keyframes showRight{
+  100%{
+    width: 0;
+  }
+}
